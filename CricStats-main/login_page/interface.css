@@ -1,0 +1,36 @@
+body{
+   
+    background-image:url("bimg.jpg");
+    text-align: center;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position: center top;
+
+}
+.title{
+    
+    position:relative;
+    top: 140px;
+    font-size: 75px;
+    opacity: 0.8;
+}
+.container{
+    position:relative;
+    width: 300px;
+    top:510px;
+   display:flex;
+   flex-direction:row;
+ justify-content:space-evenly;
+   flex-wrap: wrap;
+}
+.padding{
+    padding:20px 20px;
+}
+.btn:hover{
+    background-color: white;
+    color:rgb(0, 0, 0);
+}
+.btn{
+font-size: 20px;
+background-color:rgb(52, 49, 49);
+}

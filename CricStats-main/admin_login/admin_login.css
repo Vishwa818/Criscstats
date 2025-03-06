@@ -1,0 +1,76 @@
+body{
+    
+    background-image:url("bimg.jpg");
+    text-align: center;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position: center top;
+
+}
+.title{
+    position:relative;
+    top: 140px;
+    font-size: 75px;
+    opacity: 0.8;
+}
+.container{
+    position:relative;
+    width: 800px;
+    top:510px;
+   display:flex;
+   flex-direction:row;
+ justify-content:space-evenly;
+   flex-wrap: wrap;
+}
+.padding{
+    padding:20px 20px;
+}
+.btn:hover{
+    background-color: white;
+    color:rgb(0, 0, 0);
+}
+.btn{
+    width: 150px;
+font-size: 18px;
+background-color:rgb(52, 49, 49);
+}
+.floating-label {
+    margin-top: 18px;
+    border: 2px solid #000000;
+    border-radius: 0.5rem;
+    position: relative;
+    height: 50px;
+    outline: none;
+}
+
+.floating-label__input {
+    border: 2px solid rgb(248, 245, 245);
+    border-radius: 0.5rem;
+    padding-left: 10px;
+    height: 100%;
+    outline: none;
+}
+
+/*
+Show the label at desired position when the 
+placeholder of input isn't shown
+*/
+.floating-label__input:not(:placeholder-shown) + .floating-label__label {
+    background: #fff;
+    transform: translate(0, -200%);
+    opacity: 1;
+}
+
+.floating-label__label {
+    /* Position the label */
+    left: 1rem;
+    position: absolute;
+    top: 100%;
+    margin-top: -10px;
+
+    /* Hide it by default */
+    opacity: 0;
+    transition: all 200ms;
+
+    padding: 0 0.5rem;
+}

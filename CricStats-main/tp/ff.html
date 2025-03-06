@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ff.css">
+    <script src="ff.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="textSelectdiv">
+        <select id="textSelect" class="select" style="display: inline;">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="customOption">Other</option>
+        </select>
+        <label class="form-label select-label">Example label</label>
+      </div>
+      <div id="inputDiv" class="form-outline disaplayInput">
+        <input type="text" id="form12" class="form-control" style="display: none;" onblur="hideInput()" disabled />
+        <label id="inputLabel" class="form-label disaplayInput" for="form12">Other</label>
+      </div>
+    
+</body>
+</html>

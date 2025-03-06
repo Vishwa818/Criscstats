@@ -1,0 +1,180 @@
+body{
+  background-image: url(bimg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+place-content: center top;
+justify-content: center;
+
+}
+body::after{
+    
+    background-image:url("bimg.jpg");
+    text-align: center;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position: center top;
+content: '';
+position: absolute;
+z-index: -1;
+inset: 0;
+background: rgb(239, 235, 235);
+opacity: 0.9;
+height: 10000px;
+}
+.disaplayInput{
+display: none;
+}
+
+.title{
+    
+    position:relative;
+    
+    font-size: 75px;
+    opacity: 0.8;
+}
+.container{
+    opacity: 0.2;
+    position:static;
+}
+.padding{
+    padding:20px 20px;
+}
+
+.btn:hover{
+    background-color: white;
+    color:rgb(0, 0, 0);
+}
+.btn{
+font-size: 20px;
+background-color:rgb(52, 49, 49);
+}
+.textSelectdiv{
+    height: 1000px;
+    padding: 500px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+html,
+body {
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+header {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px;
+}
+
+#form-outer {
+  background-color: none;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 1400px;
+
+ 
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+#userAge {
+  width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #1a8cff;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+#reset {
+  background-color: #1a8cff;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
